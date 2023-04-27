@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plagiarism Tool</title>
+    <style>
+      body {
+        background-image: url("/static/2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: black;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        border-radius: 10px;
+        margin: 20px auto;
+        padding: 80px;
+        width: 100%;
+      }
+
+      h1 {
+		color: rgb(0, 0, 0);
+        font-size: 4em;
+        margin-left: 10px;
+      }
+
+      label {
+        display: block;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+
+      input[type="file"] {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        padding: 10px;
+        /* width: 100%; */
+      }
+
+      input[type="text"] {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        background-color: navy;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 1.2em;
+        padding: 10px 20px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: rgb(17, 0, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Plagiarism Tool</h1>
+      <form action="/result" method="post" enctype="multipart/form-data">
+        <label for="file" style="color: black;">Select a file to upload:</label>
+        <input type="file" accept="text/plain" name="file" id="file" width="" />
+
+        <input type="submit" name="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
